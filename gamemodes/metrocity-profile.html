@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile of 'gamemodes/sunside.amx'</title>
+  <script type="text/javascript"
+          src="http://code.jquery.com/jquery-latest.min.js">
+  </script>
+  <script type="text/javascript"
+          src="http://tablesorter.com/__jquery.tablesorter.min.js">
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#data').tablesorter();
+      $('#data th').hover(function () {
+        $(this).css({ cursor: 'pointer' });
+      });
+    });
+  </script>
+</head>
+<body>
+  <style type="text/css">
+    table {
+      margin: 0 auto;
+    }
+    table, th, td {
+      border: thin solid #555;
+      border-collapse: collapse;
+      padding: 7px 10px;
+    }
+    th, td {
+      border: none;
+    }
+    th {
+      color: white;
+      background-color: #555;
+    }
+    td {
+      font-family: Consolas, "DejaVu Sans Mono", "Courier New", Monospace;
+    }
+    td.numeric {
+      text-align: right;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #eee;
+    }
+    tbody tr:hover {
+      background-color: #c0e3eb;
+    }
+  </style>
+  <table id="meta">
+    <thead>
+      <tr>
+        <th colspan="2">Meta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Date</td>
+        <td>Wed Apr 04 14:30:31 2018</td>
+      </tr>
+      <tr>
+        <td>Duration</td>
+        <td>00:00:17</td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  <table id="data" class="tablesorter">
+    <thead>
+      <tr>
+        <th rowspan="2">Type</th>
+        <th rowspan="2">Name</th>
+        <th rowspan="2">Calls</th>
+        <th colspan="4" class="group">Self Time</th>
+        <th colspan="4" class="group">Total Time</th>
+      </tr>
+      <tr>
+        <th>%</th>
+        <th>Overall</th>
+        <th>Average</th>
+        <th>Worst</th>
+        <th>%</th>
+        <th>Overall</th>
+        <th>Average</th>
+        <th>Worst</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>public</td>
+      <td>OnGameModeExit</td>
+      <td class="numeric">1</td>
+      <td class="numeric">69.94%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">22.7</td>
+      <td class="numeric">22.7</td>
+      <td class="numeric">69.94%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">22.7</td>
+      <td class="numeric">22.7</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnVehicleSpawn</td>
+      <td class="numeric">254</td>
+      <td class="numeric">13.17%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">13.17%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>main</td>
+      <td class="numeric">1</td>
+      <td class="numeric">16.89%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">5.5</td>
+      <td class="numeric">5.5</td>
+      <td class="numeric">16.89%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">5.5</td>
+      <td class="numeric">5.5</td>
+    </tr>
+    </tbody>
+  </table>
+</body>
+</html>
