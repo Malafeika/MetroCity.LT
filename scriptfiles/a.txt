@@ -1,0 +1,43 @@
+// TextDraw developed using Zamaroht's Textdraw Editor 1.0
+
+// On top of script:
+new Text:Textdraw0;
+new Text:Textdraw1;
+new Text:Textdraw2;
+new Text:Textdraw3;
+
+// In OnGameModeInit prefferably, we procced to create our textdraws:
+Textdraw0 = TextDrawCreate(35.000000, 422.000000, "Sun");
+TextDrawBackgroundColor(Textdraw0, 255);
+TextDrawFont(Textdraw0, 3);
+TextDrawLetterSize(Textdraw0, 0.619998, 2.399998);
+TextDrawColor(Textdraw0, -65281);
+TextDrawSetOutline(Textdraw0, 1);
+TextDrawSetProportional(Textdraw0, 1);
+
+Textdraw1 = TextDrawCreate(73.000000, 425.000000, "side.");
+TextDrawBackgroundColor(Textdraw1, 255);
+TextDrawFont(Textdraw1, 3);
+TextDrawLetterSize(Textdraw1, 0.569998, 1.100000);
+TextDrawColor(Textdraw1, -1);
+TextDrawSetOutline(Textdraw1, 1);
+TextDrawSetProportional(Textdraw1, 1);
+
+Textdraw2 = TextDrawCreate(73.000000, 433.000000, "Gero zaidimo kokybe!");
+TextDrawBackgroundColor(Textdraw2, 255);
+TextDrawFont(Textdraw2, 2);
+TextDrawLetterSize(Textdraw2, 0.140000, 1.200000);
+TextDrawColor(Textdraw2, -1);
+TextDrawSetOutline(Textdraw2, 1);
+TextDrawSetProportional(Textdraw2, 1);
+
+Textdraw3 = TextDrawCreate(120.000000, 425.000000, "lt");
+TextDrawBackgroundColor(Textdraw3, 255);
+TextDrawFont(Textdraw3, 3);
+TextDrawLetterSize(Textdraw3, 0.539999, 1.100000);
+TextDrawColor(Textdraw3, -65281);
+TextDrawSetOutline(Textdraw3, 1);
+TextDrawSetProportional(Textdraw3, 1);
+
+// You can now use TextDrawShowForPlayer(-ForAll), TextDrawHideForPlayer(-ForAll) and
+// TextDrawDestroy functions to show, hide, and destroy the textdraw.

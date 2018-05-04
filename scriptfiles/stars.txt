@@ -1,0 +1,48 @@
+// TextDraw developed using Zamaroht's Textdraw Editor 1.0
+
+// On top of script:
+new Text:Textdraw0;
+new Text:Textdraw1;
+new Text:Textdraw2;
+new Text:Textdraw3;
+
+// In OnGameModeInit prefferably, we procced to create our textdraws:
+Textdraw0 = TextDrawCreate(145.000000, 426.000000, "LD_TATT:9gun2");
+TextDrawBackgroundColor(Textdraw0, 255);
+TextDrawFont(Textdraw0, 4);
+TextDrawLetterSize(Textdraw0, 0.500000, 1.000000);
+TextDrawColor(Textdraw0, -1);
+TextDrawSetOutline(Textdraw0, 0);
+TextDrawSetProportional(Textdraw0, 1);
+TextDrawSetShadow(Textdraw0, 1);
+TextDrawUseBox(Textdraw0, 1);
+TextDrawBoxColor(Textdraw0, 255);
+TextDrawTextSize(Textdraw0, 17.000000, 17.000000);
+
+Textdraw1 = TextDrawCreate(148.000000, 423.000000, "X");
+TextDrawBackgroundColor(Textdraw1, -1);
+TextDrawFont(Textdraw1, 2);
+TextDrawLetterSize(Textdraw1, 0.439999, 2.299998);
+TextDrawColor(Textdraw1, -16776961);
+TextDrawSetOutline(Textdraw1, 0);
+TextDrawSetProportional(Textdraw1, 1);
+TextDrawSetShadow(Textdraw1, 0);
+
+Textdraw2 = TextDrawCreate(164.000000, 425.000000, "SAUGI");
+TextDrawBackgroundColor(Textdraw2, 255);
+TextDrawFont(Textdraw2, 2);
+TextDrawLetterSize(Textdraw2, 0.389999, 1.100000);
+TextDrawColor(Textdraw2, -16776961);
+TextDrawSetOutline(Textdraw2, 1);
+TextDrawSetProportional(Textdraw2, 1);
+
+Textdraw3 = TextDrawCreate(164.000000, 433.000000, "ZONA");
+TextDrawBackgroundColor(Textdraw3, 255);
+TextDrawFont(Textdraw3, 2);
+TextDrawLetterSize(Textdraw3, 0.419999, 1.100000);
+TextDrawColor(Textdraw3, -16776961);
+TextDrawSetOutline(Textdraw3, 1);
+TextDrawSetProportional(Textdraw3, 1);
+
+// You can now use TextDrawShowForPlayer(-ForAll), TextDrawHideForPlayer(-ForAll) and
+// TextDrawDestroy functions to show, hide, and destroy the textdraw.
